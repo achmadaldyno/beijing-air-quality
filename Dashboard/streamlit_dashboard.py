@@ -6,7 +6,7 @@ import seaborn as sns
 @st.cache_data
 def load_data():
     # Load the data
-    df = pd.read_csv('dashboard/main_data.csv')
+    df = pd.read_csv('main_data.csv')
 
     # Drop the unnecessary columns
     df = df.drop(columns=['No', 'year', 'month', 'day', 'hour', 'wd', 'Unnamed: 0'], errors='ignore')
